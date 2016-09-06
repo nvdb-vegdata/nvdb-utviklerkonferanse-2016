@@ -9,7 +9,8 @@
 
 ###11:30 Lunsj
 
-12:30 Mats&Torger: API for lesing fra NVDB
+###12:30 API for lesing fra NVDB
+      Mats Andreassen & Torger Kielland, Triona
       Nytt i Lese-API v2
             - søk og filtrering direkte på objekttypen
             - avanserte spørringer
@@ -24,21 +25,22 @@
       Planer framover
             - Historikk
 
-13:30 Marvin&Tore: API for skriving til NVDB
+###13:30 API for skriving til NVDB
+      Tore Eide Andersen & Marvin Bredal Lillehaug, Kantega
       Datafangst API
             - Datafangst-løsningen
                   - Kontrakt
                   - Leveranse
                   - Motttak, kontroll, korrigering og registrering
             - API'et 
-                  - GeoJson 
 
       Demo av full arbeidsflyt fra opplasting via API til registrering i NVDB
       Videre planer
       Forbedringer i Skrive-API
             - Feilrettinger
             - Geometri (Z + millimeterpresisjon)
+            - Ny påloggingsmekanisme
 
-14:30 Spørsmål og svar
+###14:30 Spørsmål og svar
 
-15:00 Slutt
+###15:00 Slutt

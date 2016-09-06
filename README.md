@@ -1,16 +1,16 @@
 #NVDB Utviklerkonferane 2016
 
 ###10:00 Velkommen
-      Per Andersen, Leder NVDB og Geodataseksjonen, Vegdirektoratet
+      **_Per Andersen, Leder NVDB og Geodataseksjonen, Vegdirektoratet_**
 
 ###10:30 Inviterte foredrag - historier fra brukere
-      1. Odd Øygarden, SafeControl (Lese-API + Skrive-API)
-      2. Håvard Wahl Kongsgaard, Helsedirektoratet, 
+      1. **_Odd Øygarden, SafeControl (Lese-API + Skrive-API)_**
+      2. **_Håvard Wahl Kongsgaard, Helsedirektoratet_**
 
 ###11:30 Lunsj
 
 ###12:30 API for lesing fra NVDB
-      Mats Andreassen & Torger Kielland, Triona
+      **_Mats Andreassen & Torger Kielland, Triona_**
       Nytt i Lese-API v2
             - søk og filtrering direkte på objekttypen
             - avanserte spørringer
@@ -26,7 +26,7 @@
             - Historikk
 
 ###13:30 API for skriving til NVDB
-      Tore Eide Andersen & Marvin Bredal Lillehaug, Kantega
+      **_Tore Eide Andersen & Marvin Bredal Lillehaug, Kantega_**
       Datafangst API
             - Datafangst-løsningen
                   - Kontrakt

@@ -1,14 +1,13 @@
 #NVDB Utviklerkonferane 2016
 
-10:00 Terje/Per: Velkommen
-      Oversikt
+###10:00 Velkommen
+      Per Andersen, Leder NVDB og Geodataseksjonen, Vegdirektoratet
 
-10:30 Eksterne foredrag
-      Odd Øygarden, SafeControl (Lese-API + Skrive-API)
-      Håvard Wahl Kongsgaard, Helsedirektoratet, 
-      Jan Martin Sipari, Effekt (Lese-API)
+###10:30 Inviterte foredrag - historier fra brukere
+      1. Odd Øygarden, SafeControl (Lese-API + Skrive-API)
+      2. Håvard Wahl Kongsgaard, Helsedirektoratet, 
 
-11:30 Lunsj
+###11:30 Lunsj
 
 12:30 Mats&Torger: API for lesing fra NVDB
       Nytt i Lese-API v2

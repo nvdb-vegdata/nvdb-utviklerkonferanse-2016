@@ -1,7 +1,7 @@
 #NVDB Utviklerkonferane 2016
 
 ###10:00 Velkommen
-      **_Per Andersen, Leder NVDB og Geodataseksjonen, Vegdirektoratet_**
+      **Per Andersen, Leder NVDB og Geodataseksjonen, Vegdirektoratet**
 
 ###10:30 Inviterte foredrag - historier fra brukere
       1. **_Odd Øygarden, SafeControl (Lese-API + Skrive-API)_**

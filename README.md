@@ -1,5 +1,7 @@
 #NVDB Utviklerkonferane 2016
 
+[Påmelding:](http://www.vegvesen.no/fag/Fokusomrader/Forskning+og+utvikling/Teknologidagene)
+
 ###10:00 Velkommen
 * **_Per Andersen_**, Leder NVDB og Geodataseksjonen, Vegdirektoratet
 

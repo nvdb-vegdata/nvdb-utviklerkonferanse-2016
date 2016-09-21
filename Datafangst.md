@@ -45,6 +45,7 @@ Før vi beskriver normal arbeidsflyt i Datafangst og APIet definerer vi noen ter
 
 ## Dataflyt i Datafangst
 ![Dataflyt i Datafangst](img/workflow.png)
+
 Innsending av data og eventuell registrering av «Ferdigvegsdata» følger en definert arbeidsflyt som nå vil bli beskrevet.
 
 1. Dataforvalter oppretter en kontrakt i webgrensesnittet.
@@ -52,7 +53,9 @@ Innsending av data og eventuell registrering av «Ferdigvegsdata» følger en de
 3. Data lastes opp til kontrakten via nettleser eller API.
 4. Innsendte data blir validert aynkront. Webgrensesnittet poller etter endringer og viser en spinner, ved bruk at API 
  må en selv håndtere polling.
- De valideringer som blir gjort er blant andre attributt- og geometrivalidering mot Datakatalogen, samt automatisk stedfesting på vegnettet.
+ De valideringer som blir gjort er blant andre attributt- og geometrivalidering mot Datakatalogen. 
+  Det blir også utført automatisk stedfesting på vegnettet, men denne informasjonen er bare tilgjengelig for dataforvaltere 
+  i webgrensesnittet,
 5. Gjennomgang av innsendte data, dataforvalter går gjennom data i webgrensesnittet. Entrepenører er ikke påkrevd å levere alle
  attributter som er påkrevd for registrering i NVDB, disse attributtene må Dataforvalter legge til etter innsending. 
  Dataforvalter og andre prosjektdeltakere har mulighet til å legge til kommentarer på alle vegobjekter og vegobjekttyper, 
@@ -78,16 +81,16 @@ Datafangst har et API som støtter geoJSON.
     <th>Beskrivelse</th>
 </tr>
 <tr>
-    <td>/contract/{kontraktsid}/featurecollection</td>
+    <td>/api/v1/contract/{kontraktsid}/featurecollection</td>
     <td>POST</td>
     <td>
-    POST en komplett «feature collection» til en kontrakt. Behandling og validering tar noe tid er denne operasjonen aynkron.<br>
+    POST en komplett «feature collection» til en kontrakt. Behandling og validering tar noe tid, derfor er denne operasjonen aynkron.<br>
     Responser: <br>
     202 Accepted + payload med URI for polling av status.
     </td>
 </tr>
 <tr>
-    <td>/contract/{contractId}/featurecollection/{collectionId}</td>
+    <td>/api/v1/contract/{contractId}/featurecollection/{collectionId}</td>
     <td>GET</td>
     <td>Henter oppgitt feature collection
     Responser: <br>
@@ -95,14 +98,14 @@ Datafangst har et API som støtter geoJSON.
     </td>
 </tr>
 <tr>
-    <td>/contract/{contractId}/featurecollection/{featurecollectionid}</td>
+    <td>/api/v1/contract/{contractId}/featurecollection/{featurecollectionid}</td>
     <td>PUT</td>
     <td>Erstatt den oppgitte feature collection
     Responser: <br>
     202 Accepted + payload med URI for polling av status.</td>
 </tr>
 <tr>
-    <td>/contract/{contractId}/featurecollection/{featurecollectionid}/status</td>
+    <td>/api/v1/contract/{contractId}/featurecollection/{featurecollectionid}/status</td>
     <td>GET</td>
     <td>Hent prosesseringsstatus for innsendt feature collection. Respons er json eller xml avhengig av klientens 
     *Accept*-header.
@@ -110,7 +113,7 @@ Datafangst har et API som støtter geoJSON.
     200 OK + Payload</td>
 </tr>
 <tr>
-    <td>/contract/{contractId}/featurecollection/{featurecollectionid}/feature</td>
+    <td>/api/v1/contract/{contractId}/featurecollection/{featurecollectionid}/feature</td>
     <td>POST</td>
     <td>POST et enkelt vegobjekt som geoJSON-feature. <br>
     Responser: <br>
@@ -118,21 +121,21 @@ Datafangst har et API som støtter geoJSON.
     </td>
 </tr>
 <tr>
-    <td>/contract/{contractId}/featurecollection/{featurecollectionid}/feature/{featureId}</td>
+    <td>/api/v1/contract/{contractId}/featurecollection/{featurecollectionid}/feature/{featureId}</td>
     <td>GET</td>
     <td>Hent et enkelt vegobjekt. 
     Responser: <br>
     200 OK + Payload med vegobjekt som geoJSON feature</td>
 </tr>
 <tr>
-    <td>/contract/{contractId}/featurecollection/{featurecollectionid}/feature/{featureId}</td>
+    <td>/api/v1/contract/{contractId}/featurecollection/{featurecollectionid}/feature/{featureId}</td>
     <td>PUT</td>
     <td>Erstatt oppgitt vegobjekt
     Responser: <br>
     200 OK + Payload med valideringsstatus for vegobjektet.</td>
 </tr>
 <tr>
-    <td>/contract/{contractId}/featurecollection/{featurecollectionid}/feature/{featureId}</td>
+    <td>/api/v1/contract/{contractId}/featurecollection/{featurecollectionid}/feature/{featureId}</td>
     <td>DELETE</td>
     <td>Slett oppgitt vegobjekt
     Responser: <br>

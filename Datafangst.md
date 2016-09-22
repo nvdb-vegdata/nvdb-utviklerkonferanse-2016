@@ -146,6 +146,8 @@ Alle operasjoner returnerer med 404 Not found dersom objektet med den oppgitte i
 ikke har tilgang til kontraktet returnerer henholdsvis 401 Unauthorized og 403 Forbidden. Dersom innsendt payload ikke er 
 velformet geoJSON vil 400 Bad request bli returnert.
 
+Alle POST og PUT må ha Content-Type application/geo+json
+
 ## Format
 Datafangst-APIet bruker [geoJSON](https://tools.ietf.org/html/rfc7946) som payload-format. 
 ```json
@@ -189,3 +191,4 @@ dem med et lettlest navn.
 * attributes (påkrevd) - NVDB-attributtene for vegobjektet på format "attributtid" : "verdi". Datakatalogversjonen definerer hva som er påkrevde 
 attributter, så dersom påkrevde attributter som mangler vil gi valideringsfeil ved Datakatalog-validering.
  
+[Postman collection for API-operasjoner](https://www.getpostman.com/collections/ef3fc73342f94df0585d)

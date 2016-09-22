@@ -22,9 +22,9 @@ Før vi beskriver normal arbeidsflyt i Datafangst og APIet definerer vi noen ter
  attributter objektet har, påkrevd-nivå, og relasjoner til andre vegobjekt-typer. Et eksempel på en vegobjekt-type er «Fartsgrense».
 * Vegobjekt (feature) - en instans av en vegobjekt-type, for eksempel en enkelt fartsgrense.
 
-## Endrede vegobjekter i Datafangst<a name="endredeobjekter"></a>
- Per oktober 2016 er det kun støtte for nye objekter i Datafangst, men støtte for å inkludere eksisterende objekter er 
- planlagt støttet. 
+## Endring av eksisterende vegobjekter i Datafangst<a name="endredeobjekter"></a>
+ Per oktober 2016 er det kun støtte for nye objekter i Datafangst, endringer på objekter som allerede finnes i NVDB er ikke mulig. 
+ Støtte for å inkludere eksisterende objekter er planlagt støttet. 
 
 ## Roller og tilganger i Datafangst
 

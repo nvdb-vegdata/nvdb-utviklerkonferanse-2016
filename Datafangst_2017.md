@@ -43,11 +43,15 @@ Før vi beskriver normal arbeidsflyt i Datafangst og APIet definerer vi noen ter
 * Kan kommentere på innsendte data
 * Kan se oversiktsstatus for innsendte data
 
+Oppretting av datafangst bruker kan gjøres fritt, men for eksterne å bruke datafangst trenger en å være invitert på en kontrakt. Dersom
+det er ønskelig å teste ut datafangst uten registrering kan dette gjøres med docker. Repository for datafangst og skrive-API finnes på 
+https://hub.docker.com/u/nvdbapnevegdata/. 
 
-## Datafangst for eksterne [som vil teste datafangst]
+ Kontakt 
+Terje Brasethvik for tildeling av en test kontrakt dersom dette er ønskelig. Alternativt kan en bruke et docker image av datafangst 
 
-Under [link til github] ligger det et datafangst docker image. Dette gjør det mulig for eksterne å teste ut datafangst uten innlogging. 
-Det er også mulig å få tildelt et test prosjekt, kontakt [Terje] for dette. 
+Under  ligger det blant annet docker image av datafangst og skrive-API. Dette gjør det mulig for 
+eksterne å teste ut datafangst uten innlogging. Det er også mulig å få tildelt et test prosjekt, kontakt [Terje] for dette. 
 
 
 ## Dataflyt i Datafangst
@@ -170,13 +174,6 @@ Datafangst har et API som støtter geoJSON.
     <td>FeatureCollections i kontrakt
     Responser: <br>
     200 OK + Payload med alle featureollections i kontrakten</td>
-</tr>
-<tr>
-    <td>/api/v1/contract/{contractId}/featurecollection/{featurecollectionid}/feature/{featureId}/status</td>
-    <td>GET</td>
-    <td>Status på feature
-    Responser: <br>
-    200 OK + Payload med status (OPEN/LOCKED) på feature</td>
 </tr>
 
 

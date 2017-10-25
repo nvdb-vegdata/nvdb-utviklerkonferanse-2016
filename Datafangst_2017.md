@@ -23,8 +23,8 @@ Før vi beskriver normal arbeidsflyt i Datafangst og APIet definerer vi noen ter
 * Vegobjekt (feature) - en instans av en vegobjekt-type, for eksempel en enkelt fartsgrense.
 
 ## Endring av eksisterende vegobjekter i Datafangst<a name="endredeobjekter"></a>
- Per oktober 2016 er det kun støtte for nye objekter i Datafangst, endringer på objekter som allerede finnes i NVDB er ikke mulig. 
- Støtte for å inkludere eksisterende objekter er planlagt støttet. 
+ Per oktober 2017 er det støtte for nye objekter i Datafangst og sletting av eksisterende NVDB objekter. Støtte for å endre eksisterende NVDB objekter er
+ planlagt støttet. 
 
 ## Roller og tilganger i Datafangst
 
@@ -42,6 +42,13 @@ Før vi beskriver normal arbeidsflyt i Datafangst og APIet definerer vi noen ter
 * Kan redigere innsendte data
 * Kan kommentere på innsendte data
 * Kan se oversiktsstatus for innsendte data
+
+
+## Datafangst for eksterne [som vil teste datafangst]
+
+Under [link til github] ligger det et datafangst docker image. Dette gjør det mulig for eksterne å teste ut datafangst uten innlogging. 
+Det er også mulig å få tildelt et test prosjekt, kontakt [Terje] for dette. 
+
 
 ## Dataflyt i Datafangst
 ![Dataflyt i Datafangst](img/workflow.png)
@@ -169,7 +176,7 @@ Datafangst har et API som støtter geoJSON.
     <td>GET</td>
     <td>Status på feature
     Responser: <br>
-    200 OK + Payload med status ()</td>
+    200 OK + Payload med status (OPEN/LOCKED) på feature</td>
 </tr>
 
 

@@ -25,8 +25,8 @@ Før vi beskriver normal arbeidsflyt i Datafangst og APIet definerer vi noen ter
 * Vegobjekt (feature) - en instans av en vegobjekt-type, for eksempel en enkelt fartsgrense.
 
 ## Endring av eksisterende vegobjekter i Datafangst<a name="endredeobjekter"></a>
- Per oktober 2017 er det støtte for nye objekter i Datafangst og sletting av eksisterende NVDB objekter. Støtte for å endre eksisterende NVDB objekter er
- planlagt støttet. 
+ Per oktober 2017 er det støtte for å legge til nye objekter og sletting av eksisterende objekter i NVDB. 
+ Endringer på eksisterende NVDB objekter er planlagt støttet. 
 
 ## Roller og tilganger i Datafangst
 
@@ -170,7 +170,7 @@ Datafangst har et API som støtter geoJSON.
     <td>GET</td>
     <td>FeatureCollections i kontrakt
     Responser: <br>
-    200 OK + Payload med alle featureollections i kontrakten</td>
+    200 OK + Payload med alle featurecollections i kontrakten</td>
 </tr>
 
 

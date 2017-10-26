@@ -10,6 +10,8 @@ Entrepenører er pålagt å levere data fra vegprosjekter til Statens Vegvesen f
 I Datafangst kan entrepenører laste opp SOSI-filer og få dem validert mot [Datakatalogen](http://www.vegvesen.no/fag/Teknologi/Nasjonal+vegdatabank/Datakatalogen), 
 men den endelige registreringen av dataene til NVDB må gjøres av dataforvaltere hos Statens Vegvesen.
 
+Release notes for datafangst oppdateres sporadisk [her](https://www.vegdata.no/category/nvdb-api/release-notes/).
+
 Tradisjonelt har data blitt levert på [SOSI-format](http://www.kartverket.no/sosi/). 
 I tillegg til å støtte opplasting av SOSI-filer til NVDB og [FKB](http://www.kartverket.no/kart/kartdata/vektorkart/fkb/),
 har Datafangst også et API for å sende inn vegobjekter som  [geoJSON](http://geojson.org) - dette APIet vil bli beskrevet i dette dokumentet.
@@ -45,7 +47,8 @@ Før vi beskriver normal arbeidsflyt i Datafangst og APIet definerer vi noen ter
 
 Oppretting av datafangst bruker kan gjøres fritt, men for eksterne å bruke datafangst trenger en å være invitert på en kontrakt. Dersom
 det er ønskelig å teste ut datafangst uten registrering kan dette gjøres med docker. Repository for datafangst og skrive-API finnes på 
-https://hub.docker.com/u/nvdbapnevegdata/. Det er også mulig å få tildelt et test prosjekt, kontakt [Terje](mailto:terje.brasethvik@vegvesen.no) for dette. 
+https://hub.docker.com/u/nvdbapnevegdata/. Det er også mulig å få tildelt en test kontrakt, kontakt 
+[Terje Brasethvik](mailto:terje.brasethvik@vegvesen.no) for dette. 
 
 
 ## Dataflyt i Datafangst

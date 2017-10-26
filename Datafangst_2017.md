@@ -91,7 +91,7 @@ Datafangst har et API som støtter geoJSON.
     <th>Beskrivelse</th>
 </tr>
 <tr>
-    <td>/api/v1/contract/{kontraktsid}/featurecollection</td>
+    <td>/api/v1/contract/{contractId}/featurecollection</td>
     <td>POST</td>
     <td>
     POST en komplett «feature collection» til en kontrakt. Behandling og validering tar noe tid, derfor er denne operasjonen aynkron.<br>
